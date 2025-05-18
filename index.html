@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvigiLens</title>
+    
+    <!-- Load p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    
+    <!-- Load an older version of ml5.js to support poseNet -->
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #warning {
+            color: red;
+            font-weight: bold;
+            font-size: 24px;
+            position: fixed;
+            top: 20px;
+            left: 20px;       /* top left */
+            background: transparent;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+        #stats {
+            position: fixed;
+            top: 20px;
+            left: 460px;      /* change from left:auto to right:20px for top right */
+            background: rgba(255,255,255,0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="warning"></div>
+    <div id="stats"></div>
+    <script src="sketch.js"></script>
+</body>
+</html>
